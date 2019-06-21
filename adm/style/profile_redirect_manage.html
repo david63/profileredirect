@@ -1,0 +1,35 @@
+{% include '@' ~ NAMESPACE ~ '/head_panel.html' %}
+
+<form id="profile_redirect" method="post" action="{{ U_ACTION }}">
+	<fieldset>
+		<legend>{{ lang('PROFILE_REDIRECT_OPTIONS') }}</legend>
+		
+		<dl>
+			<dt><label for="profile_redirect_id">{{ lang('REDIRECT_PROFILE_OPTIONS') }}{{ lang('COLON') }}</label><br><span>{{ lang('REDIRECT_PROFILE_OPTIONS_EXPLAIN') }}</span></dt>
+			<dd>
+				{{ PROFILE_OPTIONS }}
+			</dd>
+		</dl>
+
+		<dl>
+			<dt><label for="profile_refresh">{{ lang('REDIRECT_REFRESH_MESSAGE') }}{{ lang('COLON') }}</label><br><span>{{ lang('REDIRECT_REFRESH_MESSAGE_EXPLAIN') }}</span></dt>
+			<dd>
+				<input type="radio" id="profile_refresh1" name="profile_refresh" value="1"{% if PROFILE_REFRESH %} checked="checked"{% endif %} />
+				<label class="set" for="profile_refresh1">{{ lang('YES') }}</label>
+				<input type="radio" id="profile_refresh0" name="profile_refresh" value="0"{% if not PROFILE_REFRESH %} checked="checked"{% endif %} />
+				<label class="unset" for="profile_refresh0">{{ lang('NO') }}</label>
+			</dd>
+		</dl>
+	</fieldset>
+
+	<fieldset>
+		<legend>{{ lang('ACP_SUBMIT_CHANGES') }}</legend>
+		<p class="submit-buttons">
+			<input class="adm-button" type="submit" id="submit" name="submit" value="{{ lang('SUBMIT') }}" />&nbsp;
+			<input class="adm-button" type="reset" id="reset" name="reset" value="{{ lang('RESET') }}" />
+		</p>
+		{{ S_FORM_TOKEN }}
+	</fieldset>
+</form>
+
+{% include '@' ~ NAMESPACE ~ '/donate.html' %}
