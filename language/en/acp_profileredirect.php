@@ -42,7 +42,7 @@ $lang = array_merge($lang, array(
 
 	'PROFILE_REDIRECT_EXPLAIN'			=> 'Here you can choose to have a new user redirected to their UCP upon their first log in after registering.',
 	'PROFILE_REDIRECT_OPTIONS'			=> 'Profile redirect options',
-	
+
 	'REDIRECT_PROFILE_OPTIONS'			=> 'Profile option',
 	'REDIRECT_PROFILE_OPTIONS_EXPLAIN'	=> 'Select the option within the UCP that you want the user to be redirected to.',
 	'REDIRECT_REFRESH_MESSAGE'			=> 'Show a redirect message',
