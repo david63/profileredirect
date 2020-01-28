@@ -7,6 +7,7 @@ Redirects a user to their UCP when they first log-in after registration.
 [![Latest Stable Version](https://poser.pugx.org/david63/profileredirect/v/stable)](https://packagist.org/packages/david63/profileredirect)
 [![Latest Unstable Version](https://poser.pugx.org/david63/profileredirect/v/unstable)](https://packagist.org/packages/david63/profileredirect)
 [![Total Downloads](https://poser.pugx.org/david63/profileredirect/downloads)](https://packagist.org/packages/david63/profileredirect)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4d59782b410f43228a6a27e7aac07cd3)](https://www.codacy.com/manual/david63/profileredirect?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=david63/profileredirect&amp;utm_campaign=Badge_Grade)
 
 ## Minimum Requirements
 * phpBB 3.2.0

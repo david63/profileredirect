@@ -36,12 +36,19 @@ if (empty($lang) || !is_array($lang))
 // ’ » “ ” …
 //
 
-$lang = array_merge($lang, array(
-	'PROFILE_REDIRECT_EXPLAIN'			=> 'Here you can choose to have a new user redirected to their UCP upon their first log in after registering.',
-	'PROFILE_REDIRECT_OPTIONS'			=> 'Profile redirect options',
 
-	'REDIRECT_PROFILE_OPTIONS'			=> 'Profile option',
-	'REDIRECT_PROFILE_OPTIONS_EXPLAIN'	=> 'Select the option within the UCP that you want the user to be redirected to.',
-	'REDIRECT_REFRESH_MESSAGE'			=> 'Show a redirect message',
-	'REDIRECT_REFRESH_MESSAGE_EXPLAIN'	=> 'Display a message to say that the user is being redirected to their UCP.',
+$lang = array_merge($lang, array(
+	'DONATE'					=> 'Donate',
+	'DONATE_EXTENSIONS'			=> 'Donate to my extensions',
+	'DONATE_EXTENSIONS_EXPLAIN'	=> 'This extension, as with all of my extensions, is totally free of charge. If you have benefited from using it then please consider making a donation by clicking the PayPal donation button opposite - I would appreciate it. I promise that there will be no spam nor requests for further donations, although they would always be welcome.',
+
+	'NEW_VERSION'				=> 'New Version - %s',
+	'NEW_VERSION_EXPLAIN'		=> 'Version %1$s of this extension is now available for download.<br>%2$s',
+	'NEW_VERSION_LINK'			=> 'Download here',
+	'NO_VERSION_EXPLAIN'		=> 'Version update information is not available.',
+
+	'PAYPAL_BUTTON'				=> 'Donate with PayPal button',
+	'PAYPAL_TITLE'				=> 'PayPal - The safer, easier way to pay online!',
+
+	'VERSION'					=> 'Version',
 ));
