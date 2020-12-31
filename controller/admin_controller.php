@@ -80,9 +80,7 @@ class admin_controller implements admin_interface
 	public function display_options()
 	{
 		// Add the language files
-		$this->language->add_lang('acp_profileredirect', $this->functions->get_ext_namespace());
-		$this->language->add_lang('acp_common', $this->functions->get_ext_namespace());
-		$this->language->add_lang('ucp');
+		$this->language->add_lang(array('acp_profileredirect', 'ucp', 'acp_common'), $this->functions->get_ext_namespace());
 
 		// Create a form key for preventing CSRF attacks
 		$form_key = 'login_redirect';

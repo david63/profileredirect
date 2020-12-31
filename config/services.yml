@@ -26,3 +26,6 @@ services:
         class: david63\profileredirect\core\functions
         arguments:
             - '@ext.manager'
+
+    _defaults:
+        public: true
